@@ -6,17 +6,22 @@
 
 ### Claude Code
 
-注册 marketplace 并安装：
+**第一步：注册 marketplace**
 
 ```bash
 /plugin marketplace add starzn/micro-skills
+```
+
+**第二步：安装插件**
+
+```bash
 /plugin install micro-skills
 ```
 
-或直接安装：
+### 更新
 
 ```bash
-/plugin install https://github.com/starzn/micro-skills
+/plugin update micro-skills
 ```
 
 ## Skills 列表
