@@ -72,6 +72,7 @@ flowchart TD
 **安全检查:**
 - 使用 `git add <file>` 指定文件，禁止 `git add -A`
 - 检查是否包含敏感文件（.env, credentials 等）
+- **分支命名校验:** 提交前检查当前分支名称，仅允许在以以下前缀开头的分支上执行提交：`fix`, `hotfix`, `bugfix`, `feature`, `feat`, `release`, `chore`, `docs`, `refactor`, `test`, `ci`, `build`, `style`。如果不符合，请拒绝提交并提示用户。
 
 **提交格式:**
 ```bash
@@ -84,6 +85,7 @@ git commit -m "feat(scope): 中文描述"
 
 ## Red Flags - 暂停并确认
 
+- 当前分支名称不符合约定的前缀规范
 - 变更包含 `.env`、`credentials`、密钥文件
 - 用户未明确要求提交但检测到变更
 - `git push` 操作（需要用户确认）
