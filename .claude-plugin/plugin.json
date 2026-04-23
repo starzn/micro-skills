@@ -7,7 +7,7 @@
     "email": "starzn6379@163.com"
   },
   "homepage": "https://github.com/starzn/micro-skills",
-  "repository": "https://github.com/starzn/micro-skills",
+  "repository": "https://github.com/starzn/micro-skills.git",
   "license": "MIT",
   "keywords": [
     "skills",
@@ -16,6 +16,6 @@
     "automation"
   ],
   "skills": [
-    "git-commit"
+    "./skills/git-commit"
   ]
 }

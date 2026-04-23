@@ -13,7 +13,8 @@
       "name": "micro-skills",
       "source": "./",
       "description": "个人技能库：git commit 自动化、代码规范检查等",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "category": "learning"
     }
   ]
 }
