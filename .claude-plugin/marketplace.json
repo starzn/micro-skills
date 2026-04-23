@@ -1,7 +1,8 @@
 {
   "name": "micro-skills-marketplace",
   "owner": {
-    "name": "starzn"
+    "name": "starzn",
+    "email": "starzn6379@163.com"
   },
   "metadata": {
     "description": "个人技能库",
@@ -10,10 +11,7 @@
   "plugins": [
     {
       "name": "micro-skills",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/starzn/micro-skills.git"
-      },
+      "source": "./",
       "description": "个人技能库：git commit 自动化、代码规范检查等",
       "version": "1.0.0"
     }

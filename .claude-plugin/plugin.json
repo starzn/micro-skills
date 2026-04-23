@@ -3,7 +3,8 @@
   "description": "个人技能库：git commit 自动化、代码规范检查等",
   "version": "1.0.0",
   "author": {
-    "name": "starzn"
+    "name": "starzn",
+    "email": "starzn6379@163.com"
   },
   "homepage": "https://github.com/starzn/micro-skills",
   "repository": "https://github.com/starzn/micro-skills",
