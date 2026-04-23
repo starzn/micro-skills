@@ -5,7 +5,7 @@ description: Use when user asks to commit changes, generate commit message, or h
 
 # git-commit
 
-自动分析代码变更并生成符合项目规范的 commit message，然后执行 git commit。
+自动分析代码变更并生成符合 Conventional Commits 规范的 commit message，然后执行 git commit。
 
 ## 触发条件
 
@@ -22,7 +22,6 @@ digraph commit_flow {
     "多仓库?" [shape=diamond];
     "遍历每个仓库" [shape=box];
     "获取状态和变更" [shape=box];
-    "查看提交历史风格" [shape=box];
     "生成commit message" [shape=box];
     "执行git commit" [shape=box];
     "完成" [shape=doublecircle];
@@ -32,8 +31,7 @@ digraph commit_flow {
     "多仓库?" -> "遍历每个仓库" [label="是"];
     "多仓库?" -> "获取状态和变更" [label="否"];
     "遍历每个仓库" -> "获取状态和变更";
-    "获取状态和变更" -> "查看提交历史风格";
-    "查看提交历史风格" -> "生成commit message";
+    "获取状态和变更" -> "生成commit message";
     "生成commit message" -> "执行git commit";
     "执行git commit" -> "完成";
 }
